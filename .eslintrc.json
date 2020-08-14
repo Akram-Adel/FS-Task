@@ -1,0 +1,46 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "linebreak-style": ["error", "windows"],
+    "camelcase": "off",
+    "brace-style": "off",
+    "object-curly-newline" : ["error", {
+      "ImportDeclaration": "never"
+    }],
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "no-unused-vars": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".tsx", ".jsx"] }],
+    "react/jsx-max-props-per-line": ["error", { "maximum": 2 }],
+    "no-use-before-define": ["error", { "functions": false }],
+    "react/jsx-closing-bracket-location": ["error", "after-props"],
+    "operator-linebreak": ["error", "before", { "overrides": { "&&": "after" } }],
+    "react/jsx-wrap-multilines": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-closing-tag-location": "off",
+    "max-len": ["error", { "code": 150 }]
+  }
+}

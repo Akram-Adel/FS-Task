@@ -1,0 +1,1 @@
+export type IActiveList = 'top_rated' | 'upcoming' | 'now_playing'

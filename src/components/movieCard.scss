@@ -1,0 +1,72 @@
+.MovieCard {
+  position: relative;
+  padding-top: 60%;
+  cursor: pointer;
+  
+  &.poster {
+    padding-top: 150%;
+  }
+  &.minimal>div span {
+    font-size: 0.8rem;
+    height: 1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    &:last-child {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &>div {
+    position: absolute;
+    top: 0; bottom:0; left: 0; right: 0;
+    margin: 0.25rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid var(--app-primary-light);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0; left: 0; right: 0;
+      background-image: linear-gradient(to top, var(--app-primary), rgba(9,18,24,0));
+    }
+
+    img {
+      width: 1.5rem;
+      position: absolute;
+      top: 0.5rem; right: 0.5rem;
+      filter: invert(100%);
+      cursor: pointer;
+
+      &.clicked {
+        // animation-name: star-clicked;
+        animation: star-clicked 0.5s;
+      }
+      &.liked {
+        filter: invert(100%) sepia(50%) saturate(2878%) hue-rotate(346deg);
+      }
+    }
+
+    span {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      position: relative;
+
+      &:first-of-type {
+        color: rgba(255,255,255,0.6)
+      }
+      &:last-of-type {
+        padding-bottom: 0.25rem;
+      }
+    }
+  }
+}
+
+@keyframes star-clicked {
+  0%, 100% {transform: scale(1) }
+  50% {transform: scale(1.2) }
+}

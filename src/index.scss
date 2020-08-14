@@ -1,0 +1,86 @@
+:root {
+  --app-primary: #131218;
+  --app-secondary: #24BAEF;
+  --app-primary-light: #56606A;
+  --app-primary-dark: #1A191F;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/Roboto-Medium.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/Roboto-Bold.ttf');
+  font-weight: bold;
+}
+
+/*
+ * fluid typography
+ * more info: css-tricks.com/books/fundamental-css-tactics/scale-typography-screen-size/
+ */
+html {
+  font-size: calc(5px + (16 - 5) * ((100vw - 300px) / (1200 - 300)));
+  line-height: calc(1.3em + (1.6 - 1.2) * ((100vw - 300px)/(1200 - 300)));
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+  background-color: var(--app-primary);
+  color: #fff;
+}
+
+
+.container {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    max-width: 560px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+  
+  .container {
+    max-width: 1140px;
+  }
+}
+
+
+
+.animated { transition: all 0.5s; }
+
+.vr-margin-lg { margin-top: 2rem; margin-bottom: 2rem; }
+.hr-margin { margin-left: 1rem; margin-right: 1rem; }
+.vr-padding { padding-top: 1rem; padding-bottom: 1rem; }
