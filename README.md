@@ -3,21 +3,23 @@ Simple react app for browsing TheMovieDB
 
 [![React Version](https://img.shields.io/badge/React-16.13.1-blue)](https://github.com/facebook/react) [![React Router Version](https://img.shields.io/badge/React_Router-4.0.5-blue)](https://github.com/react-navigation/react-navigation) [![Redux Version](https://img.shields.io/badge/Redux-4.0.5-blue)](https://github.com/react-navigation/react-navigation)
 
-## To get started
+<p align='center'>
+<img src="https://raw.githubusercontent.com/Akram-Adel/sample-TheMovieDB/master/demo.gif" height="300">
+</p>
 
-### Clone the repo
+## Includes
 
-`git clone https://github.com/Akram-Adel/FS-Task.git`
-`cd FS-Task`
+- [x] `TypeScrip`
+- [x] `EsLint`
+- [x] `Redux Store`
 
-### Install Dependencies
+## Getting Started
 
-`npm i`
-or
-`yarn`
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### start the app
-
-`npm start`
-
-### Enjoy
+```sh
+git clone https://github.com/Akram-Adel/sample-TheMovieDB.git
+cd sample-TheMovieDB
+npm i
+npm start
+```
