@@ -9,7 +9,7 @@ Simple react app for browsing TheMovieDB
 
 ## Includes
 
-- [x] `TypeScrip`
+- [x] `TypeScript`
 - [x] `EsLint`
 - [x] `Redux Store`
 
